@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace SimonSchaufi\GithubAutomergeTest;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use SimonSchaufi\GithubAutomergeTest\Commands\GithubAutomergeTestCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class GithubAutomergeTestServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('github-automerge-test')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_github-automerge-test_table')
+            ->hasCommand(GithubAutomergeTestCommand::class);
     }
 }

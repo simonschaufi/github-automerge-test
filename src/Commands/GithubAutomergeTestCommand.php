@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace SimonSchaufi\GithubAutomergeTest\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class GithubAutomergeTestCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'github-automerge-test';
 
     public $description = 'My command';
 
